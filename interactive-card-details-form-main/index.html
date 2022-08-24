@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="main.css">
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -31,7 +31,7 @@
       </div>
 
       <div class="card-back">
-      <img src="" alt="images/card-back-img.png" class="card-back-img">
+      <img src="images/bg-card-back.png" alt="" class="card-back-img">
       <p class="evc-display">000</p>
       </div>
      </section>
@@ -87,14 +87,19 @@
         name="cvc"
         placeholder="e.g. 123"
         oninput="inputCvc()">
-
         <p id="error-cvc"></p>
-      
-      
       </label>
-      </div>
+    </div>
+      <button id="submit">Confirm</button>
+    </form>
 
-      </form>
+    <div id="thank-you"class="thank-you hodden">
+      <img src="images/icon-complete.svg" alt="">
+      <h2 id="thank-you-header">Thank you!</h2>
+      <p>We've added your card details</p>
+     <button id="continue">Continue</button>
+    </div>
+    
      </section>
   </div>
 
